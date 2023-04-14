@@ -32,7 +32,7 @@ var projectsarray=[{
         projectsarray.map((element)=>{
             return <div className="projects">
                 <p className="project-title" >{element.title}</p>
-                <img className="project-image" alt="didn't get the image" src={element.image}></img>
+                <img className="project-image" alt="dad" src={element.image}></img>
                 <p className="project-git">Git hub :- {element.git}</p>
                 <p className="project-link">Try out :- {element.link}</p>
             </div>
