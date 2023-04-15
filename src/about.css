@@ -1,0 +1,89 @@
+body{
+    background-color: white;
+    background-image:url(D:\portfolio\portfolio\src\back.png) ;
+    background-size:cover;
+}
+@keyframes img{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+.main{
+    display: grid;
+    grid-template-columns:300px 1fr;
+    grid-template-rows:400px 1fr;
+}
+.navbar{
+    display: flex;
+    animation-name:navbar;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+}
+
+.title{
+    animation-name: title;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+
+.img-container{
+    margin-top: 100px;
+    justify-content: left;
+    height: 300px;
+    width: 100%;
+    grid-row: 1;
+}
+
+.imga{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 30px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(179, 190, 148);
+    border-radius: 50%;
+    animation-name:img;
+    animation-duration: 0.5s;
+    animation-iteration-count:1;
+}
+
+.button-containera{
+    align-content: center;
+    grid-row:2;
+}
+
+.btn{
+    width: 150px;
+    display: block;
+    border: solid;
+    padding: 20px;
+    border-color: rgb(177, 148, 190);
+    background-color:transparent;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    border: solid;
+    padding:25px;
+    border-color:black;
+    background-color: rgba(179, 190, 148, 0.5);
+}
+
+.link{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+.text-container{
+    height:500px;
+    background-color: aliceblue;
+    border-radius: 25px;
+    width: auto;
+    margin:150px 100px 100px 100px;
+    grid-column:2;
+    grid-row-start:1;
+    grid-row-end:3;
+}

@@ -50,7 +50,9 @@ code {
 }
 
 .terminal-heading{
-  margin:20px 20px;
+  margin-top: 0px;
+  padding-top: 20px;
+  margin-left:20px;
   background-color: black;
   color:aliceblue;
 }

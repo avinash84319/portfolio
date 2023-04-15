@@ -3,9 +3,9 @@ import React from "react";
 import {useState } from "react";
 import Terdisplay from "./terdisplay";
 
-const Terminal=()=>{
+const Terminal=(props)=>{
 
-    const helparr=['about :- displays information about me' ,'projects :- displays some all of my projects',
+    const helparr=['website :- displays porfolio in website form','about :- displays information about me' ,'projects :- displays some all of my projects',
                     "skills :- displays all of my skills" , "clear :- clears all of terminal"]
     const aboutarr=["name :- Avinash Reddy c","college:- JSS Science and Technology University","I am very much passionate about web development, I am learning React to become a Full-Stack developer",
                      "I am also very much intrested in AI/Ml stuff and soon gone try learn and explore that" , "github :- https://github.com/avinash84319",
@@ -13,6 +13,7 @@ const Terminal=()=>{
     const skillsarr=["HTML,CSS,Javascrit","Node.js,Mongo DB","Basic React","Basic python","Graphic Designing"]
     const[cmd,setCmd]=useState([])
     const [text,setText]=useState([])
+
 
     const handlechange=(e)=>{
         if (e.key === 'Enter'){
@@ -34,6 +35,10 @@ const Terminal=()=>{
             else if(e.target.value==="clear"){
                 setText([]);
                 setCmd([]);
+            }
+            else if(e.target.value==="website"){
+                window.location.href ="website"
+                return null;
             }
             else{
                 setText(["command not found please use help"])
