@@ -80,7 +80,7 @@ body{
 .text-container{
     height:500px;
     background-color: aliceblue;
-    opacity: 0.75;
+    opacity: 0.9;
     border-radius: 25px;
     width: auto;
     margin:150px 100px 100px 100px;
@@ -120,4 +120,68 @@ body{
     margin: 20px;
     margin-top: 70px;
     padding: 60px;
+}
+
+/* project section */
+
+.text-containerp{
+    overflow-y:scroll;
+    height:500px;
+    background-color: aliceblue;
+    opacity: 0.9;
+    width: auto;
+    margin:150px 100px 100px 100px;
+    grid-column:2;
+    grid-row-start:1;
+    grid-row-end:3;
+    font-family: 'montserrat', Courier, monospace;
+    color: rgb(20, 15, 46);
+}
+.projectsp{
+    border:dashed;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+}
+.iconsp{
+    padding:10px;
+    margin-left:50px;
+}
+.project-titlep{
+    margin-left:20px;
+    font-size: 30px;
+    color:black;
+  }
+  
+  .project-gitp{
+    color:black;
+  }
+  
+  .project-linkp{
+    color:black;
+  }
+  
+  .project-imagep{
+    height:200px;
+    width:auto;
+    position: relative;
+  }
+
+  .text-containerp::-webkit-scrollbar {
+    width:5px; 
+ }
+
+ .text-containerp::-webkit-scrollbar-track {
+    background-image: repeating-linear-gradient(45deg, red 0, red 1px, transparent 0, transparent 50%);
+    background-size: 10px 10px;
+}
+
+.text-containerp::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: inset 1px 1px 5px black ;
 }
