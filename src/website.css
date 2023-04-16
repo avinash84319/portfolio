@@ -1,6 +1,6 @@
 body{
     background-color: white;
-    background-image:url(D:\portfolio\portfolio\src\back.png) ;
+    background-image:url(back.png) ;
     background-size:cover;
 }
 @keyframes title {
